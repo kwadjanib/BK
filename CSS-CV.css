@@ -1,0 +1,852 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ... (votre code existant) ... */
+
+.logo {
+    width: 100%;
+    max-width: 120px;
+    transition: all 0.5s ease-in-out;
+}
+
+header {
+
+    transition: all 0.5s ease-in-out;
+}
+
+header.scrolled {
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0, 0, 0) 0px 0px 5px;
+}
+
+/* ... (votre code existant) ... */
+
+/*Page de présentation */
+.présentation {
+
+    transition: all 0.5s ease-in-out;
+}
+
+.textPresentation {
+    /* ... (votre code existant) ... */
+    transition: all 0.5s ease-in-out;
+}
+
+.titre1 {
+    /* ... (votre code existant) ... */
+    transition: all 0.5s ease-in-out;
+}
+
+.titre2 {
+    /* ... (votre code existant) ... */
+    transition: all 0.5s ease-in-out;
+}
+
+.titre3 {
+    /* ... (votre code existant) ... */
+    transition: all 0.5s ease-in-out;
+}
+
+.titre4 {
+    /* ... (votre code existant) ... */
+    transition: all 0.5s ease-in-out;
+}
+
+/* ... (votre code existant) ... */
+
+/*
+le header le logo et la barre de navigation
+
+*/
+.logo {
+    width: 100%;
+    max-width: 120px;
+    transition: all 0.5s;
+    margin: 0;
+}
+
+header {
+    height: 80px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1000;
+
+}
+
+header.scrolled {
+    background: rgb(255, 255, 255);
+    transition: all 0.5s;
+    box-shadow: rgb(0, 0, 0) 0px 0px 5px;
+
+}
+
+.navigation {
+    display: flex;
+
+}
+
+.navigation a {
+    color: rgb(0, 0, 0);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1 em;
+    text-decoration: none;
+
+}
+
+.navigation li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 20px;
+
+}
+
+.navigation a:hover {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+#menu-icon {
+    font-size: 30px;
+    padding-right: 15px;
+    color: white;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+.active {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+/*
+
+fin du header
+*/
+
+/*Page de presentation */
+.présentation {
+    height: 90vh;
+    background-image: url("Design sans titre.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.textPresentation {
+    grid-area: 4 / 7 / 10 /12;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 5vw;
+    font-family: 'Libre Caslon Display';
+    text-align: center;
+}
+
+.titre1 {
+    grid-area: 1 / 1 / 1 / 13;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 5vw;
+    font-family: 'Libre Caslon Display';
+    text-align: center;
+}
+
+.titre2 {
+
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 4vw;
+    font-family: 'Libre Caslon Display';
+    text-align: center;
+}
+
+.titre3 {
+    grid-area: 1 / 1 / 1 / 13;
+    font-size: 4vw;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Libre Caslon Display';
+    text-align: center;
+}
+
+.titre4 {
+    font-size: 1.5em;
+    padding-bottom:20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Libre Caslon Display';
+    text-align: center;
+}
+
+/*Fin partie présentation*/
+.espace {
+    height: 10vh;
+}
+
+.espace2 {
+    height: 3vh;
+}
+
+/* Formation */
+
+.formation {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.TA2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+}
+
+.TA3 {
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    font-family: 'Nunito', sans-serif;
+    margin: 0px 2vw 0px 2vw;
+}
+
+.Pos1A {
+    grid-area: 5 / 7 / 8/ 12;
+}
+
+.Pos1B {
+    grid-area: 8/ 7 / 11/ 12;
+}
+
+.titreCadre1 {
+    text-align: center;
+    grid-area: 3 / 7 / 4 / 12;
+    margin-right: 20px;
+}
+
+.FormGauche {
+    border-radius: 50%;
+    grid-area: 3 / 2 / 12 /5;
+    background-image: url("Diplome.png");
+    background-size: cover;
+    background-color: black;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: white;
+
+}
+
+/*Fin partie Formation*/
+
+/*Compétence*/
+
+.compétence {
+    background-color: gray;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+
+.TB2 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: rgb(1, 25, 70);
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin: 10px 0px 15px;
+}
+
+
+.TB3 {
+    font-size: 1em;
+    /* Taille de la police en unité vw */
+    color: rgb(0, 0, 0);
+    font-family: 'Nunito', sans-serif;
+    margin: 0px 5vw 0px 5vw;
+    text-align: center;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+    text-align: left;
+}
+
+.CompGauche1 {
+    background-image: url("img2.jpg");
+    grid-area: 1 / 1 / 13 / 7;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 10px;
+}
+
+.CompDroit1 {
+    background-image: url("contexte-programmation-personne-travaillant-codes-ordinateur.jpg");
+    grid-area: 1 / 7 / 13 /13;
+
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 10px;
+}
+
+.titreCadre2 {
+    text-align: center;
+    grid-area: 1 / 7 / 4 / 13;
+
+}
+
+.Pos1 {
+    margin-left: 10px;
+    grid-area: 4 / 1 / 9/ 3;
+    border-top: 2px solid rgb(255, 0, 0);
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.Pos2 {
+    grid-area: 4/ 3 / 9/ 5;
+    border-top: 2px solid rgb(255, 0, 0);
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.Pos3 {
+    grid-area: 4 / 5 / 9/ 7;
+    border-bottom: 2px solid rgb(255, 0, 0);
+    border-top: 2px solid rgb(255, 0, 0);
+
+}
+
+.Pos4 {
+    grid-area: 4 / 9/ 10/ 13;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-bottom: 2px solid rgb(255, 0, 0);
+    border-top: 2px solid rgb(255, 0, 0);
+}
+
+.Pos5 {
+
+    grid-area: 4 / 7 / 10/ 9;
+
+    border-bottom: 2px solid rgb(255, 0, 0);
+    border-top: 2px solid rgb(255, 0, 0);
+}
+
+.Pos5 li {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+
+
+/*
+fin competence
+*/
+
+/*Partie Contact*/
+
+
+.Contact {
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.Boutton {
+    grid-area: 9 / 3 / 11 / 6;
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.Boutton a {
+    border: 5px solid rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 10px 10px 10px;
+}
+
+.Boutton a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.titreCadre {
+    text-align: center;
+    grid-area: 1 / 2 / 3 / 7;
+    margin-right: 20px;
+}
+
+.imgGauche1 {
+    grid-area: 1 / 7 / 12 /2;
+    background-size: cover;
+    width: 100%;
+    background-color: gray;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: white;
+    border: 10px;
+
+}
+
+.textGauche1 {
+    grid-area: 6 / 3 / 9 / 6;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.textDroit1 {
+    grid-area: 2 / 9 / 4 / 12;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: white;
+    border: 10px;
+}
+
+.imgDroit1 {
+    grid-area: 3 / 8 / 11 / 9;
+    background-image: url(KWADJANI\ BILON.jpg);
+
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: white;
+    border: 10px;
+
+}
+
+.Boutton2 {
+    grid-area: 9 / 10 / 11 / 12;
+    color: rgb(0, 0, 0);
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.Boutton2 a {
+    border: 5px solid rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    padding: 10px 10px 10px 10px;
+}
+
+/*Fin partie compétence*/
+/*footer*/
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    width: 100%;
+    text-align: center;
+}
+
+footer h3 {
+    margin: 0 0 10px 0;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/*adaptation ecran*/
+
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: space-between;
+        background-color: white;
+        transition: all .50s ease-in-out;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        right: -100%;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(96, 96, 96, 0.947);
+        padding: 0px 0px 0px 0px;
+        transition: all .50s ease-in-out;
+    }
+
+    .navigation a {
+        font-size: larger;
+        padding: 32px 0;
+        margin: 15px 0;
+        display: block;
+        transition: all .50s ease;
+        text-decoration: none;
+        color: white;
+    }
+
+    .navigation.open {
+        right: 0px;
+        transition: all .50s ease-in-out;
+    }
+
+    .navigation a:hover {
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+
+
+
+
+    .TA2 {
+        font-size: 1em;
+    }
+
+    .TA3 {
+        font-size: 0.8em;
+    }
+
+    .FormGauche {
+        grid-area: 5 / 2 / 11 /6;
+
+    }
+
+    .TB3 {
+        font-size: 0.8em;
+    }
+
+    .TB2 {
+        margin: 10px 0px 15px;
+        font-size: 1em;
+    }
+
+    .espace {
+        height: 5vh;
+    }
+
+    .compétence {
+        height: 50vh;
+    }
+
+    .présentation {
+        height: 60vh;
+    }
+
+    .textDroit1 {
+        grid-area: 1 / 8 / 3/ 12;
+    }
+
+    .textGauche1 {
+        font-size: 0.8em;
+    }
+
+    .imgDroit1 {
+        grid-area: 2/ 9 / 10 / 11;
+
+    }
+
+    .Boutton2 {
+        grid-area: 11 / 9 / 12 / 11;
+    }
+
+    .Boutton2 a {
+        border: 3px solid rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 5px 5px 5px 5px;
+        font-size: 10px;
+    }
+
+    .Boutton {
+        grid-area: 9 / 3/ 11 / 6;
+    }
+
+    .Boutton a {
+        border: 3px solid rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 5px 5px 5px 5px;
+        font-size: 10px;
+    }
+
+    .FormDroit {
+        grid-area: 1 / 7 / 7 / 13;
+    }
+
+    .active {
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+
+    .Pos1 {
+        grid-area: 3/ 1 / 8/ 4;
+    }
+
+    .Pos3 {
+        grid-area: 3/ 4 / 8/ 7;
+    }
+
+    .Pos2 {
+        grid-area: 8 / 2 / 13/ 5;
+        border-top: 0px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .Pos2 li {
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+
+}
+
+/*adaptation telephone*/
+
+@media screen and (max-width: 500px) {
+    
+
+    .FormGauche {
+        grid-area: 5 / 1 / 10 /6;
+
+
+    }
+
+    header {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .textPresentation {
+        grid-area: 4 / 6 / 8 /13;
+        font-size: 2em;
+
+    }
+
+    .Pos1 {
+        grid-area: 8/ 1 / 11/ 5;
+    }
+
+    .Pos2 {
+        grid-area: 8/ 5 / 11/ 8;
+        border-top: 2px solid rgb(255, 0, 0);
+    }
+
+    .Pos3 {
+        grid-area: 8/ 8 / 11/ 12;
+    }
+
+    .CompDroit1 {
+        grid-area: 1 / 1 / 7 / 13;
+        background-color: black;
+    }
+
+    .CompGauche1 {
+        grid-area: 1 / 1 / 7 / 13;
+        background-color: black;
+    }
+
+    .titreCadre {
+        grid-area: 7 / 1 / 8 / 13;
+    }
+
+    .espace {
+        height: 0vh;
+    }
+
+    .Pos4 {
+        grid-area: 8 / 1 / 12/ 7;
+    }
+
+    .Pos5 {
+        grid-area: 8 / 7 / 10/ 12;
+    }
+
+    .titreCadre2 {
+        grid-area: 7 / 1 / 8 / 13;
+    }
+
+    .titre2 {
+        font-size: 2em;
+    }
+
+    .compétence {
+        height: 100vh;
+
+    }
+
+    .Contact {
+        height: 80vh;
+    }
+
+    .imgGauche1 {
+        grid-area: 8 / 1 / 13 / 13;
+    }
+
+    .textGauche1 {
+        grid-area: 10 / 2 / 11 / 12;
+    }
+
+    .textDroit1 {
+        grid-area: 1 / 1 / 2/ 13;
+    }
+
+    .imgDroit1 {
+        grid-area: 2 / 5/ 6 / 8;
+    }
+
+    .Boutton2 {
+        grid-area: 7 / 1 / 8 / 12;
+    }
+
+    .Boutton {
+        grid-area: 11 / 5 / 12 / 9;
+
+    }
+
+    .Boutton2 a {
+        text-decoration: none;
+        padding: 5px 5px 5px 5px;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .titre1 {
+        grid-area: 3 / 1 / 4 / 13;
+    }
+
+    .titre2 {
+        grid-area: 4 / 1 / 5 / 13;
+    }
+
+    .titre3 {
+        grid-area: 5 / 1 / 6 / 13;
+    }
+
+
+
+
+
+
+}
+
+/*fin de l'adaptation au mobile*/
+@media screen and (max-width: 450px) {
+    .TB2 {
+        font-size: 14px;
+    }
+    .compétence {
+        height: 90vh;
+    }
+    .FormGauche {
+        grid-area: 2/ 3 / 6 /10;
+    }
+    .formation {
+        height: 80vh;
+    }
+    .titreCadre1 {
+        grid-area: 1 / 1 / 2 / 13;
+    }
+    .titre3 {
+        font-size: 1.5em;
+    }
+    .Pos4 {
+        grid-area: 8 / 1 / 11/ 7;
+    }
+   
+    .présentation {
+        background-position: -150px 0px;
+
+    }
+
+    .Pos1A {
+        grid-area: 7/ 2 / 9/ 11;
+    }
+
+
+    .TA2 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .Pos1B {
+        grid-area: 9/ 2 / 12/ 11;
+    }
+    .imgDroit1 {
+        grid-area: 2 / 4/ 6 / 9;
+    }
+   
+}
+@media screen and (max-width: 400px) {
+    .Pos5 {
+        grid-area: 8 / 7 / 11/ 12;
+    }
+}

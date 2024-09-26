@@ -1,0 +1,371 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ... (votre code existant) ... */
+
+.logo {
+    width: 100%;
+    max-width: 120px;
+    transition: all 0.5s ease-in-out;
+}
+
+header {
+    height: 80px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1000;
+    transition: all 0.5s ease-in-out;
+}
+
+header.scrolled {
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0, 0, 0) 0px 0px 5px;
+}
+
+/* ... (votre code existant) ... */
+
+/*Page de présentation */
+.présentation {
+    
+    transition: all 0.5s ease-in-out;
+}
+
+.textPresentation {
+    /* ... (votre code existant) ... */
+    transition: all 0.5s ease-in-out;
+}
+
+.titre1 {
+    /* ... (votre code existant) ... */
+    transition: all 0.5s ease-in-out;
+}
+
+.titre2 {
+    /* ... (votre code existant) ... */
+    transition: all 0.5s ease-in-out;
+}
+
+.titre3 {
+    /* ... (votre code existant) ... */
+    transition: all 0.5s ease-in-out;
+}
+
+.titre4 {
+    /* ... (votre code existant) ... */
+    transition: all 0.5s ease-in-out;
+}
+
+/* ... (votre code existant) ... */
+
+/*
+le header le logo et la barre de navigation
+
+*/
+.logo {
+    width: 100%;
+    max-width: 120px;
+    transition: all 0.5s;
+    margin: 0;
+}
+
+header {
+    height: 80px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1000;
+
+}
+
+header.scrolled {
+    background: rgb(255, 255, 255);
+    transition: all 0.5s;
+    box-shadow: rgb(0, 0, 0) 0px 0px 5px;
+    transition: all .50s ease-in-out;
+
+}
+
+.navigation {
+    display: flex;
+
+}
+
+.navigation a {
+    color: rgb(0, 0, 0);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1 em;
+    text-decoration: none;
+    transition: all .50s ease-in-out;
+}
+
+.navigation li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 20px;
+
+}
+
+.navigation a:hover {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+#menu-icon {
+    font-size: 30px;
+    padding-right: 15px;
+    color: white;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+.active {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+/*
+
+fin du header
+*/
+
+/*footer*/
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    width: 100%;
+    text-align: center;
+}
+
+footer h3 {
+    margin: 0 0 10px 0;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+footer img {
+    width: 20px;
+    height: 20px;
+}
+
+/*fin footer*/
+.Ma_photo {
+    grid-area: 3/2/13/8;
+    background-image: url("photo.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+
+}
+.textPresentation {
+    grid-area: 6 / 12 / 12 / 19;
+    font-family:"libre caslon text", serif;
+    font-size: 3em;
+}
+
+.textPresentation2{
+    grid-area: 4 / 14 / 5 / 20;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+}
+
+.présentation {
+    height: 75vh;
+    background-color: rgb(204, 204, 204);
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.Bio {
+    height: 40vh;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.textBio {
+    grid-area: 4 / 3 / 10 / 11;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+}
+.titreBio {
+    grid-area: 2 / 2 / 4 / 6;
+    font-family: "Libre caslon text", serif;
+    font-size: 3em;
+}
+
+/*fin de la partie présentation*/
+
+/* Activité*/
+.Activité {
+    height: 75vh;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.titreActivité {
+    grid-area: 3 / 8/ 5 / 10;
+    font-family: "Libre caslon text", serif;
+    font-size: 3em;
+   
+}
+.textActivité {
+    grid-area: 5 / 8 / 12 / 12;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+}
+.imgAct{
+    grid-area: 1 / 1 / 12 / 7;
+    background-image: url("img\ activité.png");
+    background-size: cover;
+    background-position: center;
+    border: 5px solid rgb(255, 255, 255);
+}
+/*adapter le site au mobile*/
+
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        transition: all .50s ease-in-out;
+        right: -100%;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(96, 96, 96, 0.947);
+        padding: 0px 0px 0px 0px;
+    }
+    .active {
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    .Ma_photo {
+        grid-area: 3/2/11/11;
+  
+    }
+    .textBio {
+        
+        font-size: 0.9em;
+    }
+    .textActivité {
+        font-size: 0.9em;
+    }
+
+    .navigation a {
+        font-size: larger;
+        padding: 32px 0;
+        margin: 15px 0;
+        display: block;
+        transition: all .50s ease;
+        text-decoration: none;
+        color: white;
+    }
+
+    .navigation.open {
+        right: 0px;
+        transition: all .50s ease-in-out;
+    }
+
+    .navigation a:hover {
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+}
+/*fin de l'adaptation au mobile*/
+@media screen and (max-width: 500px) {
+    .Ma_photo {
+        grid-area: 3/4/11/18;
+  
+    }
+    .textPresentation {
+        font-size: 0em;
+    }
+    .textPresentation2 {
+        grid-area: 12 / 1 / 13 / 20;
+        text-align: center;
+    }
+    .textBio {
+        font-size: 0.8em;
+        grid-area: 5 / 2 / 10 / 11;
+    }
+    .Activité {
+        height: 70vh;
+    }
+    .textActivité {
+        grid-area: 9 / 2 / 12 / 13;
+        font-size: 0.8em;
+    }
+    .imgAct {
+        grid-area: 1 / 1 / 7 / 13;
+        
+    }
+    .titreActivité {
+        grid-area: 7 / 6 / 9 / 12;
+        font-size: 2em;
+    }
+
+   
+}
+@media screen and (max-width: 450px) {
+    .Ma_photo {
+        grid-area: 5/4/11/18;
+  
+    }
+    .titreActivité {
+        grid-area: 7 / 1 / 8 / 13;
+        font-size: 2em;
+        text-align: center;
+    }
+}

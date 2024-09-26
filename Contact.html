@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Permet de s'adapter à la taille de l'écran -->
+    <link rel="stylesheet" href="CSS-Contact.css">
+    <link href="https://fonts.cdnfonts.com/css/libre-caslon-display" rel="stylesheet">
+    <title>Contact</title>
+    <link rel="icon" href="B.png">
+    <link rel="stylesheet" href="boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="B-sans_en_noir.png" class="logo" alt=""></a>
+
+        <ul class="navigation">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="Mon_CV.html">Mon CV</a></li>
+            <li><a href="apropos.html">à propos</a></li>
+            <li><a href="Contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="main">
+            <div class="bx bx-menu" id="menu-icon" style="color: black;"></div>
+        </div>
+    </header>
+
+    <div class="contact">
+
+        <div class="textContact">
+            Contactez-moi
+
+        </div>
+        <div class="textContact2">
+            Vous avez des question ou vous voulez me contacter pour un projet ?
+        </div>
+
+
+
+
+    </div>
+
+    <div class="info">
+        <div class="titreC1">
+            Contacts
+        </div>
+        <div class="num">
+            <span class="bx bx-phone-call"></span>
+            <span class="textInfo">
+                +33 06 24 05 04 03
+            </span>
+        </div>
+        <div class="mail">
+            <span class="textInfo2">
+                kwadjanibilon@gmail.com
+            </span>
+        </div>
+        <div class="titreC2">
+            Scannez-moi
+        </div>
+        <div class="qr">
+            <img src="QR.png" alt="">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer>
+
+        <div>
+            <h3>Suivez-moi </h3>
+            <ul>
+                <li><a href="mailto:kwadjanibilon@gmail.com" target="_blank">
+                    <i class="material-icons" style="font-size:27px;color:rgb(92, 92, 92)">mail</i></a>
+                        </li>
+
+                <li>
+                    <a href="https://www.instagram.com/bilon.973?igsh=OGQ5ZDc2ODk2ZA==" target="_blank">
+                        <i class="fa fa-instagram" style="font-size:30px;color:red"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+
+
+    <script>
+        document.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        let menu = document.querySelector('#menu-icon');
+        let nav = document.querySelector('.navigation');
+        let hmd = document.querySelector('header');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            nav.classList.toggle('open');
+            hmd.classList.toggle('open');
+        };
+    </script>
+</body>
+
+</html>
